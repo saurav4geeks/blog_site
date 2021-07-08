@@ -1,0 +1,42 @@
+{% extends "blog_home/base.html" %} {% block content %}
+<!-- Blog Section -->
+<section>
+  <div class="container">
+    <!-- post1 -->
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <div class="card mb-3" style="max-width: 100%">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <img
+                src="{{object.author.profile.image.url}}"
+                class="img-fluid rounded-start profile-img"
+                alt="Image not Loaded"
+              />
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title">{{ object.title }}</h5>
+                <p class="card-text">{{ object.content }}</p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >Posted on {{post.date_posted|date:"d F"}} by
+                    {{post.author}}</small>
+                </p>
+                {%if object.author == user%}
+                    <p class="card-text">
+                        <small class="text-muted"><a href="{%url 'post-update' object.id%}">Update Post</a></small>
+                    </p>
+                    <p class="card-text">
+                    <small class="text-muted"><a href="{%url 'post-delete' object.id%}">Delete Post</a></small>
+                    </p>
+                {%endif%}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}

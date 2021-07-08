@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+
+.login {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.form-control::placeholder {
+  opacity: 0.5;
+}
+
+.login-form {
+  padding: 25px;
+  margin: auto;
+  min-width: 320px;
+  max-width: 500px;
+  box-shadow: 1px 1px 5px #ccc;
+}
+
+.submit-form {
+  margin: 20px 0 10px;
+  padding: 7px 25px;
+}
+
+.text-info {
+  font-family: "Open Sans", sans-serif;
+  color: #ff3b3f !important;
+}
+
+label {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+  color: #a9a9a9;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group:focus {
+  outline: none;
+  border: none;
+}
+.btn-custom {
+  background-color: #ff3b3f;
+  color: white;
+  border: none;
+}
+.btn-custom:hover {
+  background-color: #fc4b4e;
+  color: white;
+  border: none;
+}

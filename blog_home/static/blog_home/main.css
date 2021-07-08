@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #efefef;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: #ff3b3f;
+  transition: all 0.3s;
+}
+a:hover {
+  color: rgba(255, 59, 63, 0.85);
+}
+
+.navbar-brand {
+  font-family: "Open Sans", sans-serif;
+  color: #ff3b3f;
+  font-weight: 600;
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+.navbar-brand:hover {
+  color: rgba(255, 59, 63, 0.85);
+}
+
+.nav-item a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #a9a9a9;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+}
+.nav-item a:hover,
+:visited,
+:focus {
+  color: #ff3b3f;
+}
+header {
+  width: 100%;
+}
+section {
+  margin-top: 3%;
+}
+
+.card {
+  background: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 2%;
+}
+
+.profile-img {
+  border-radius: 15px !important;
+  width: 90%;
+}
+.card-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.card-title a {
+  color: black !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+footer {
+  margin-top: 6%;
+  background-color: #ff3b3f;
+}
+
+.copyright {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  background-color: #ff3b3f;
+  color: #e2e3f3;
+  text-align: center;
+  margin-bottom: 0px;
+  padding: 10px 0px;
+}
+.copyright a {
+  color: white;
+}
+.copyright a:hover {
+  color: #f8ba8c;
+}
